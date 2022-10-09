@@ -51,9 +51,9 @@
   height: 100%;
 }
 
-.wrapper {
-  flex: 1;
-}
+//.wrapper {
+//  flex: 1;
+//}
 
 .mobile-menu__close-btn {
   background-color: transparent;
@@ -117,7 +117,7 @@
 }
 
 .mobile-contact__item {
-  padding-left: 25px;
+  margin-bottom: 64px;
 }
 
 .mobile-contact__list:not(:last-child) {
@@ -144,7 +144,7 @@
 .social-network__item {
   display: flex;
   align-items: center;
-  padding-left: 25px;
+  position: absolute;
 }
 
 .social-network__link {
@@ -157,8 +157,13 @@
 }
 
 .social-network {
-  position: relative;
-  flex: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+
+  position: absolute;
+  bottom: 46px;
 }
 
 .social-network__list:not(:last-child) {
